@@ -16,8 +16,17 @@ body{
 .text{
     color: $white-text;
 }
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/promo_footer';
 @import './blocks/about';
 @import './blocks/start.scss';
+@import './blocks/advantages';
+@import './blocks/partners';
+@import './blocks/program';
