@@ -9,55 +9,61 @@
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body>
-    <header>           
-        <nav class="nav-menu">
-            <a href="index.html" class="nav-menu-logo"><img src="./imajes/logo.svg" alt="logo"></a>
-            <ul class="nav-menu nav-menu-list">
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Главная</a>
-                </li>
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Курсы</a>
-                </li>
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Расписание</a>
-                </li>
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Преподаватели</a>
-                </li>
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Рассылка</a>
-                </li>
-                <li class="nav-menu nav-menu-list nav-menu-list-item">
-                    <a href="#" class="nav-menu-link">Контакты</a>
-                </li>
-            </ul>
-            <a href="#" class="nav-menu-btn">Зайти в кабинет</a>
-        </nav>
-    </header>
-
     <section class="promo">
-        <div class="promo-title">
-            <h1 class="promo-title promo-title-content">Первый курс<br>по компьютерной сборке</h1>
+        <a href="index.html" class="promo__logo">
+            <img src="./imajes/logo.svg" alt="logo">
+        </a>
+        <div class="container">
+            <header class="header">
+                <nav class="header__nav">
+                    <ul class="header__nav-list">
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Главная</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Курсы</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Расписание</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Преподаватели</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Рассылка</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#" class="header__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="promo__wrapper">
+                <h1 class="promo__title">Первый курс<br>по компьютерной сборке</h1>
+                <div class="promo__timer">
+                    <div class="promo__timer-item">
+                        <p class="promo__count" id="days">18</p>
+                        <p class="promo__timer-descr">Дней</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count" id="hours">18</p>
+                        <p class="promo__timer-descr">Часов</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count" id="minutes">18</p>
+                        <p class="promo__timer-descr">Минут</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count" id="seconds">18</p>
+                        <p class="promo__timer-descr">Секунд</p>
+                    </div>
+                </div>
+            </div>
+            <div class="promo__footer">
+                <button type="button" class="ordering__btn">Заказать курс</button>
+            </div>
         </div>
-        <!-- <div class="promo timer">
-            <div class="promo timer timer-item">
-                <p class="promo timer timer-item timer-item-count">18</p>
-                <p class="promo timer timer-item timer-item-descr">Дней</p>
-            </div>
-            <div class="promo timer timer-item">
-                <p class="promo timer timer-item timer-item-count">18</p>
-                <p class="promo timer timer-item timer-item-descr">Часов</p>
-            </div>
-            <div class="promo timer timer-item">
-                <p class="promo timer timer-item timer-item-count">18</p>
-                <p class="promo timer timer-item timer-item-descr">Минут</p>
-            </div>
-            <div class="promo timer timer-item">
-                <p class="promo timer timer-item timer-item-count">18</p>
-                <p class="promo timer timer-item timer-item-descr">Секунд</p>
-            </div> 
-        </div> -->
+        <button type="button" href="#" class="promo__btn">Зайти в кабинет</button>
     </section>
 </body>
 </html>

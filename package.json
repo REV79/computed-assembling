@@ -19,5 +19,11 @@
   "dependencies": {
     "gulp-sass": "^5.1.0",
     "sass": "^1.54.9"
-  }
+  },
+  "browserslist": [
+    "last 1 versions",
+    "> 1%",
+    "maintained node versions",
+    "not dead"
+  ]
 }
