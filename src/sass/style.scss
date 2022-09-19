@@ -6,28 +6,18 @@
     font-family: 'Roboto';
 }
 
+body{
+    background: #000;
+}
 .container{
     max-width: 1306px;
     margin: 0 auto;
 }
+.text{
+    color: $white-text;
+}
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/promo_footer';
-
-// .promo {
-//     min-height: 960px;
-//     background: url('../imajes/main-screen__bgc.jpg') center (center/cover) no-repeat;
-//     transform: translateY(-85px);
-//     z-index: 1;
-//     .promo-title{
-//         // width: 65%;
-//         // height: 450px;
-//         .promo-title-content{
-//             margin: 0;
-//             font-weight: 700;
-//             font-size: 64px;
-//             line-height: 140%;
-//             color: #FFFFFF;
-//         }
-//     }    
-// }
+@import './blocks/about';
+@import './blocks/start.scss';

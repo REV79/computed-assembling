@@ -1,0 +1,66 @@
+@import '../base/variables';
+.start{
+    margin-top: 200px;
+    &__header{
+        width: 498px;
+        height: 127px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+    }
+    &__descr{
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.5;
+    }
+    &__content-wrapper{
+        margin-top: 80px;
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    &__content_progress-one{
+        margin: 20px 0 35px 0;
+        width: 100%;
+        height: 80px;
+        background: $pink-gradient;
+    }
+    &__content_progress-two{
+        margin: 30px 0 45px 0;
+        width: 100%;
+        height: 60px;
+        background: $pink-gradient;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    &__content_progress-three{
+        margin: 45px 0 60px 0;
+        width: 100%;
+        height: 30px;
+        background: $pink-gradient;
+    }
+    &__content_progress-four{
+        margin: 55px 0 70px 0;
+        width: 100%;
+        height: 10px;
+        background: $pink-gradient;
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+    }
+    &__content-title{
+        margin: 0;
+        font-weight: 700;
+        font-size: 36px;
+    }
+    &__content-descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 160%;
+        opacity: 0.5;
+    }
+}
