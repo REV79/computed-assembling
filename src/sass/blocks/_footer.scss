@@ -1,0 +1,67 @@
+.footer{
+    margin: 0 auto;
+    margin-top: 200px;
+    max-width: 547px;
+    text-align: center;
+    &__title{
+        font-weight: 700;
+        font-size: 48px;
+    }
+    &__descr{
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 160%;
+        opacity: 0.5;
+    }
+    &__mailing-form{
+        margin-top: 60px;
+        width: 495px;
+        height: 44px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__mailing{
+        width: 330px;
+        height: 44px;
+        opacity: 0.25;
+        border-radius: 50px 0px 0px 50px;
+        transform: translateX(20px); 
+    }
+    &__btn{
+        width: 160px;
+        height: 44px;
+        background: $red-gradient;
+        border-radius: 50px;
+        transform: translateX(1px);
+        &:hover{
+            background: $pink-gradient;
+        }
+    }
+    &__social{
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 290px;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__social-item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 50px;
+        background: $pink-gradient;
+        border-radius: 100%;
+        &:hover{
+            background: $red-gradient;
+        }
+    }
+    &__template-info{
+        margin-top: 50px;
+        font-weight: 400;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+}

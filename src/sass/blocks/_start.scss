@@ -1,7 +1,7 @@
 .start{
     margin-top: 200px;
     &__header{
-        width: 498px;
+        max-width: 498px;
         height: 127px;
         display: flex;
         justify-content: space-between;
