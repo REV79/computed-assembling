@@ -1,0 +1,35 @@
+@mixin set-border ($quantity, $column, $parent, $child){
+    $counter: 0;
+    @for $i from 0 to $quantity {
+        .#{$parent} {
+            &#{$child}:nth-child(#{$i + 1}){
+                border-right: 1px solid rgba($color: #ffffff, $alpha: .3);
+                border-bottom: 1px solid rgba($color: #ffffff, $alpha: .3);
+                $counter: $counter + 1;
+                @if $column == 1 {
+                    border-right: none;
+                    @if $counter == 8 {
+                        border-bottom: none;
+                    }
+                } @else if $column == 2 {
+                    @if $counter % 2 == 0{
+                        border-right: none;  
+                    }
+                    @if $counter > 6 {
+                        border-bottom: none;
+                    }
+                } @else if $column == 4 {
+                    @if $counter == 4 {
+                        border-right: none;
+                    }
+                    @if $counter == 8 {
+                        border-right: none;
+                    }
+                    @if $counter > 4 {
+                        border-bottom: none;
+                    }
+                }
+            }
+        }
+    }
+}

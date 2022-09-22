@@ -26,6 +26,9 @@
         display: flex;
         justify-content: space-between;
         align-items: end;
+        &:nth-child(2){
+            margin-top: 7px;
+        }
     }
     &__progress-wrapper{
         width: 714px;
@@ -41,12 +44,12 @@
         justify-content: start;
     }
     &__progress-red{
-        width: 440px;
+        width: 60%;
         height: 6px;
         background: $red-gradient;
     }
     &__progress-white{
-        width: 274px;
+        width: 40%;
         height: 6px;
         background: $white-text;
     }

@@ -1,5 +1,6 @@
 @import './base/_variables';
 @import './base/_fonts';
+@import './base/mixins';
 
 *{
     box-sizing: border-box;
@@ -22,6 +23,7 @@ body{
 .left{
     text-align: left;
 }
+
 @import './blocks/promo';
 @import './blocks/header';
 @import './blocks/promo_footer';
@@ -32,3 +34,4 @@ body{
 @import './blocks/program';
 @import './blocks/teachers';
 @import './blocks/footer';
+@import './base/media';

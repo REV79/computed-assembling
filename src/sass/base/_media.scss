@@ -1,0 +1,578 @@
+@media(max-width: 1200px){
+    .header{
+        &__nav-item{
+            padding-right: 20px;
+        }
+    }
+    .promo_footer{
+        &__progress-wrapper{
+            width: 500px;
+        }
+    }
+    .about{
+        &__content{
+            align-items: center;
+        }
+        &__text-wrapper{
+            margin: 0;
+        }
+        &__title{
+            margin-top: 0;
+        }
+    }
+    .advantages{
+        &__item-descr{
+            margin: 30px 10px 0;
+        }
+    }
+    .partners{
+        &__wrapper_item-logo{
+            padding-right: 19px;
+            padding-left: 19px;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .header{
+        &__nav-list{
+            margin-top: 0;
+        }
+        &__nav-item{
+            padding-right: 10px;
+        }
+        &__nav-link{
+            font-size: 16px;
+        }
+        &__header-btn{
+            width: 150px;
+        }
+    }
+    .promo{
+        &__wrapper{
+            margin-top: 40px;
+            align-items: center;
+            text-align: center;
+        }
+    }
+    .promo_footer{
+        &__ordering-btn{
+            width: 150px;
+        }
+        &__statistic{
+            width: 200px;
+        }
+        &__descr{
+            font-size: 14px;
+        }
+        &__value{
+            font-size: 14px;
+        }
+        &__progress-wrapper{
+            width: 360px;
+        }
+
+    }
+    .start{
+        margin-top: 100px;
+        &__header{
+            margin: 0 auto;
+        }
+        &__content-descr{
+            margin: 14px;
+        }
+        &__descr{
+            text-align: center;
+        }
+    }
+    .partners{
+        &__wrapper{
+            @include set-border(8, 2, 'partners__wrapper', '_item-logo');
+        }
+        &__wrapper_item-logo{
+            padding-right: 75px;
+            padding-left: 75px;
+        }
+        &__header{
+            max-width: 100%;
+            text-align: center;
+        }
+    }
+    .teachers{
+        &__header{
+            max-width: 100%;
+            justify-content: center;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header{
+        position: relative;
+        &__header-logo{
+            display: none;
+        }
+        &__header-btn{
+            display: none;
+        }
+        &__nav{
+            position: fixed;
+            width: 100%;
+            height: 50px;
+        }
+        &__nav-list{
+            position: fixed;
+            flex-direction: column;
+            justify-content: center;
+            top: 0;
+            right: +100%;
+            width: 50%;
+            height: 100vh;
+            padding: 20px 15px;
+            background-color: rgba(0, 0, 0, .8);
+            transition: 0.6s all;
+        }
+        &__nav-active{
+            right: 0;
+        }
+        &__nav-item{
+            margin-top: 15px;
+            padding-right: 0;
+            border: none;
+        }
+        &__nav-link{
+            font-size: 20px;
+        }
+        &__hamburger{
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 26px;
+            height: 15px; 
+        }
+        &__hamburger-item{
+            display: block;
+            height: 3px;
+            width: 100%;
+            background-color: #c89afc;
+            margin-bottom: 3px;
+            transition: 0.5s all;
+        }
+        &__hamburger-active{
+            span{
+                margin-bottom: -3px;
+            }
+            span:nth-child(1){
+                transform: translateY(3px) rotate(-45deg);
+            }
+            span:nth-child(2){
+                display: none;
+            }
+            span:nth-child(3){
+                transform: translateY(3px) rotate(45deg);
+            }
+        }
+    }
+    .promo{
+        min-height: 615px;
+        &__title{
+            font-size: 35px;
+        }
+    }
+    .promo_footer{
+        margin-top: 100px;
+        &__min-container{
+            min-width: 100%;
+            padding-top: 0;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        &__statistic{
+            width: 280px;
+        }
+        &__progress-wrapper{
+            width: 95%;
+        }
+    }
+    .about{
+        margin-top: 100px;
+        height: 350px;
+        &__title{
+            font-size: 35px;
+        }
+        &__descr{
+            font-size: 12px;
+        }
+    }
+    .start{
+        &__header{
+            justify-content: center;
+        }
+        &__title{
+            font-size: 35px;
+        }
+        &__descr{
+            text-align: center;
+            font-size: 13px;
+        }
+        &__wrapper{
+            margin-top: 50px;
+        }
+        &__content-title{
+            font-size: 30px;
+        }
+        &__content-descr{
+            font-size: 11px;
+        }
+        &__content_progress-one{
+            height: 60px;
+        }
+        &__content_progress-two{
+            height: 40px;
+        }
+        &__content_progress-three{
+            height: 20px;
+            margin: 36px 0 55px 0;
+        }
+        &__content_progress-four{
+            height: 9px;
+            margin: 40px 0 60px 0;
+        }
+    }
+    .advantages{
+        margin-top: 100px;
+        &__title{
+            font-size: 35px;
+        }
+        &__wrapper{
+            margin-top: 80px;
+        }
+        &__item-title{
+            font-size: 20px;
+            margin-top: 30px;
+        }
+        &__item-descr{
+            font-size: 11px;
+            margin-top: 15px;
+        }
+    }
+    .partners{
+        margin-top: 100px;
+        &__title{
+            font-size: 35px;
+        }
+        &__wrapper{
+            margin-top: 30px;
+            @include set-border(8, 1, 'partners__wrapper', '_item-logo');
+        }
+        &__wrapper_item-logo{
+            padding-right: 90px;
+            padding-left: 90px; 
+        }
+    }
+    .program{
+        margin-top: 80px;
+        &__title{
+            font-size: 35px;
+        }
+        &__subtitle{
+            font-size: 13px;
+        }
+        &__wrapper{
+            margin-top: 40px;
+        }
+        &__content-item{
+            margin-top: 60px;
+        }
+        &__content-week{
+            font-size: 11px;
+        }
+        &__content-descr{
+            font-size: 15px;
+        }
+        &__divider{
+            height: 515px;
+        }
+        &__left_divider-wrapper{
+            margin-top: 50px;
+        }
+        &__left-divider{
+            margin-top: 133px;
+        }
+        &__right-content{
+            margin-top: 56px;
+        }
+        &__right_divider-wrapper{
+            margin-top: 105px;
+        }
+        &__right-divider{
+            margin-top: 133px;
+        }
+    }
+    .teachers{
+        margin-top: 100px;
+        &__title{
+            font-size: 35px;
+            margin-top: 0;
+        }
+        &__wrapper{
+            margin-top: 20px;
+        }
+        &__photo{
+            width: 90%;
+        }
+        &__name{
+            font-size: 20px;
+        }
+        &__descr{
+            font-size: 13px;
+        }
+        &__biography-btn{
+            margin-top: 15px;
+            width: 130px;
+        }
+    }
+    .footer{
+        margin-top: 100px;
+        &__title{
+            font-size: 35px;
+        }
+        &__descr{
+            font-size: 13px;
+        }
+        &__mailing-form{
+            margin-top: 30px;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .promo{
+        min-height: 575px;
+        &__title{
+            font-size: 20px;
+        }
+        &__timer{
+            width: 300px;
+        }
+        &__timer-item{
+            width: 70px;
+            height: 90px;
+        }
+        &__count{
+            font-size: 25px;
+        }
+        &__timer-descr{
+            font-size: 13px;
+        }
+    }
+    .promo_footer{
+        &__container{
+            height: 175px;
+        }
+        &__descr{
+            font-size: 11px;
+        }
+        &__value{
+            font-size: 11px;
+        }
+        &__statistic-content{
+            &:nth-child(2){
+                margin-top: 0;
+            }
+        }
+    }
+    .about{
+        margin-top: 50px;
+        &__content{
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__text-wrapper{
+            margin-top: 15px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+    }
+    .start{
+        margin-top: 260px;
+        &__logo{
+            width: 100px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__descr{
+            margin-top: 0;
+            font-size: 11px;
+        }
+        &__content-wrapper{
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        &__content-title{
+            font-size: 25px;
+            text-align: center;
+        }
+        &__content_progress-one{
+            height: 32px;
+            margin: 10px 0 10px 0;
+        }
+        &__content_progress-two{
+            height: 22px;
+            margin: 13px 0 20px 0;
+        }
+        &__content_progress-three{
+            height: 12px;
+            margin: 17px 0 24px 0;
+        }
+        &__content_progress-four{
+            height: 5px;
+            margin: 19px 0px 26px 0px;
+        }
+    }
+    .advantages{
+        margin-top: 50px;
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            flex-direction: column;
+        }
+        &__item{
+            margin-top: 15px;
+        }
+        &__item-title{
+            margin-top: 5px;
+        }
+    }
+    .partners{
+        margin-top: 50px;
+        &__header{
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper{
+            margin-top: 100px;
+        }
+        &__wrapper_item-logo{
+            padding-right: 60px;
+            padding-left: 60px;
+        }
+    }
+    .program{
+        margin-top: 30px;
+        &__title{
+            font-size: 25px;
+        }
+        &__subtitle{
+            font-size: 11px;
+        }
+        &__content-descr{
+            font-size: 12px;
+        }
+        &__content-item{
+            margin-top: 15px;
+        }
+        &__left_divider-wrapper{
+            margin-top: 45px;
+        }
+        &__right_divider-wrapper{
+            margin-top: 100px;
+        }
+        &__left-divider{
+            margin-top: 76px;
+        }
+        &__right-divider{
+            margin-top: 76px;
+        }
+        &__divider{
+            height: 320px;
+        }
+    }  
+    .teachers{
+        margin-top: 50px;
+        &__header{
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__wrapper{
+            flex-direction: column;
+        }
+        &__item{
+            margin-top: 15px;
+        }
+    } 
+    .footer{
+        margin-top: 50px;
+        &__title{
+            font-size: 25px;
+        }
+        &__descr{
+            font-size: 11px;
+            margin-top: 15px;
+        }
+        &__mailing-form{
+            margin-top: 15px;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            height: 100px;
+        }
+        &__mailing{
+            width: 90%;
+            transform: none;
+            border-radius: 50px;
+        }
+        &__btn{
+            transform: none;
+        }
+    } 
+}
+@media(max-width: 428px){
+    .program{
+        &__left-divider{
+            margin-top: 95px;
+        }
+        &__right-divider{
+            margin-top: 95px;
+        }
+        &__divider{
+            height: 385px;
+        }
+    }
+}
+@media(max-width: 376px){
+    .program{
+        &__left-divider{
+            margin-top: 115px;
+        }
+        &__right-divider{
+            margin-top: 115px;
+        }
+        &__divider{
+            height: 460px;
+        }
+    }
+}
+@media(max-width: 326px){
+    .program{
+        &__left-divider{
+            margin-top: 135px;
+        }
+        &__right-divider{
+            margin-top: 135px;
+        }
+        &__divider{
+            height: 535px;
+        }
+    }
+}

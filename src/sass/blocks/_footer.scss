@@ -24,9 +24,14 @@
     &__mailing{
         width: 330px;
         height: 44px;
-        opacity: 0.25;
+        // opacity: 0.25;
+        background-color: #747474;
+        color: $white-text;
         border-radius: 50px 0px 0px 50px;
         transform: translateX(20px); 
+        &::placeholder{
+            color: $white-text;
+        }
     }
     &__btn{
         width: 160px;

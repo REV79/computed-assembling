@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Компьютерная сборка</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
@@ -22,23 +23,28 @@
                         <a href="#" class="header__nav-link text">Главная</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Курсы</a>
+                        <a href="#about" class="header__nav-link text">Курсы</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Расписание</a>
+                        <a href="#program" class="header__nav-link text">Расписание</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Преподаватели</a>
+                        <a href="#teachers" class="header__nav-link text">Преподаватели</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Рассылка</a>
+                        <a href="#mailing-form" class="header__nav-link text">Рассылка</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Контакты</a>
+                        <a href="#social" class="header__nav-link text">Контакты</a>
                     </li>
                 </ul>
+                <div class="header__hamburger">
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                </div>
             </nav>
-            <button type="button" href="#" class="header__header-btn text">Зайти в кабинет</button>
+            <button type="button" href="#" class="header__header-btn text">Зайти в кабинет</button>            
         </header>
         <div class="promo__container">
             <div class="promo__wrapper">
@@ -96,7 +102,7 @@
         </div>
     </section>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__content">
                 <img src="./imajes/about__img.png" alt="Компьютер" class="about__img">
@@ -177,26 +183,19 @@
                 <h2 class="partners__title text">Партнеры - топовые бренды</h2>                
             </div>
             <div class="partners__wrapper">
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__horisontal-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
-                <div class="partners__vertical-divider"></div>
-                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
             </div>
         </div>
     </section>
 
-    <section class="program">
+    <section class="program" id="program">
         <div class="program__container">
             <img src="./icons/icon-heading.png" alt="program logo" class="program__logo">
             <h2 class="program__title text">Программа обучения</h2>
@@ -250,7 +249,7 @@
         </div>
     </section>
 
-    <section class="teachers">
+    <section class="teachers" id="teachers">
         <div class="container">
             <div class="teachers__header">
                 <img src="./icons/icon-heading.png" alt="teachers logo" class="teachers__logo">
@@ -282,11 +281,11 @@
     <footer class="footer">
         <h2 class="footer__title text">Статьи каждую неделю</h2>
         <p class="footer__descr text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
-        <form action="#" class="footer__mailing-form">
+        <form action="#" class="footer__mailing-form" id="mailing-form">
             <input type="email" required placeholder="E-mail" class="footer__mailing">
             <button class="footer__btn text">Подписаться</button>
         </form>
-        <div class="footer__social">
+        <div class="footer__social" id="social">
             <div class="footer__social-item">
                 <img src="./icons/vk.svg" alt="vk">
             </div>

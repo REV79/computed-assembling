@@ -6,9 +6,12 @@
         display: flex;
         justify-content: space-between;
     }
+    &__img{
+        width: 40%;
+    }
     &__text-wrapper{
         margin-top: 69px;
-        max-width: 636px;
+        width: 50%;
     }
     &__title{
         font-weight: 700;

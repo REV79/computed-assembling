@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__hamburger{
+        display: none;
+    }
     &__nav{
         margin: 0 auto;
         max-width: 920px;        
