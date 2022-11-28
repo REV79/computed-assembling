@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Компьютерная сборка</title>
+    <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+
+<body>
+    <section class="promo">
+        <header id="up" class="header">
+            <a href="index.html" class="header__header-logo">
+                <img src="./imajes/logo.svg" alt="logo">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#up" class="header__nav-link text">Главная</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about" class="header__nav-link text">Курсы</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#program" class="header__nav-link text">Расписание</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#teachers" class="header__nav-link text">Преподаватели</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#mailing-form" class="header__nav-link text">Рассылка</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#social" class="header__nav-link text">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__hamburger">
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                    <span class="header__hamburger-item header__hamburger-active"></span>
+                </div>
+            </nav>
+            <button data-modal="indev" type="button" href="#" class="header__header-btn text">Зайти в кабинет</button>            
+        </header>
+        <div class="promo__container">
+            <div class="promo__wrapper">
+                <h1 class="promo__title text">Первый курс<br>по компьютерной сборке</h1>
+                <div class="promo__timer">
+                    <div class="promo__timer-item">
+                        <p class="promo__count text" id="days">18</p>
+                        <p class="promo__timer-descr text">Дней</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count text" id="hours">18</p>
+                        <p class="promo__timer-descr text">Часов</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count text" id="minutes">18</p>
+                        <p class="promo__timer-descr text">Минут</p>
+                    </div>
+                    <div class="promo__timer-item">
+                        <p class="promo__count text" id="seconds">18</p>
+                        <p class="promo__timer-descr text">Секунд</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="promo_footer">
+            <div class="promo_footer__container">
+                <div class="promo_footer__min-container">
+                    <button data-modal="indev" type="button" class="promo_footer__ordering-btn text">Заказать курс</button>
+                    <div class="promo_footer__statistic">
+                        <div class="promo_footer__statistic-content">
+                            <p class="promo_footer__descr text">Учеников всего:</p>
+                            <p class="promo_footer__value text">200</p>
+                        </div>
+                        <div class="promo_footer__statistic-content">
+                            <p class="promo_footer__descr text">Успешно закончили курс:</p>
+                            <p class="promo_footer__value text">190</p>
+                        </div>
+                    </div>
+                    <div class="promo_footer__progress-wrapper">
+                        <div class="promo_footer__statistic-content">
+                            <p class="promo_footer__descr text">Заработано учениками:</p>
+                            <p class="promo_footer__value text">400 000₽</p>
+                        </div>
+                        <div class="promo_footer__progress-grad">
+                            <div class="promo_footer__progress-red"></div>
+                            <div class="promo_footer__progress-white"></div>
+                        </div>
+                        <div class="promo_footer__statistic-content">
+                            <p class="promo_footer__descr text">0</p>
+                            <p class="promo_footer__descr text">1 000 000₽</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__content">
+                <img src="./imajes/about__img.png" alt="Компьютер" class="about__img">
+                <div class="about__text-wrapper">
+                    <h2 class="about__title text">Чем мы занимаемся?</h2>
+                    <p class="about__descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eget neque,
+                        dignissim et feugiat elit augue in suspendisse egestas. Dictum vestibulum mi et sed nunc, orci
+                        fermentum vestibulum, morbi. Et neque, adipiscing sapien sem senectus praesent aenean consequat.
+                        Aenean facilisi turpis aliquet fringilla. Nunc sem felis sed interdum feugiat mattis elit,
+                        sollicitudin. Quam pharetra rhoncus risus, cursus id elementum aliquet. Nullam turpis arcu
+                        malesuada arcu interdum placerat nisi, lobortis. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="start">
+        <div class="container">
+            <div class="start__header">
+                <img src="./icons/icon-heading.png" alt="fast start logo" class="start__logo">
+            <h2 class="start__title text">Быстрый старт</h2>
+            </div>
+            <div class="start__descr">
+                <p class="text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+            </div>
+            <div class="start__content-wrapper">
+                <div class="start__content">
+                    <p class="start__content-title text">100%</p>
+                    <div class="start__content_progress-one"></div>
+                    <p class="start__content-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+                <div class="start__content">
+                    <p class="start__content-title text">75%</p>
+                    <div class="start__content_progress-two"></div>
+                    <p class="start__content-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+                <div class="start__content">
+                    <p class="start__content-title text">50%</p>
+                    <div class="start__content_progress-three"></div>
+                    <p class="start__content-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+                <div class="start__content">
+                    <p class="start__content-title text">Итог</p>
+                    <div class="start__content_progress-four"></div>
+                    <p class="start__content-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="advantages">
+        <div class="container">
+            <h2 class="advantages__title text">Получите профессию прямо сейчас</h2>
+            <div class="advantages__wrapper">
+                <div class="advantages__item">
+                    <img src="./icons/icon-1.svg" alt="computer" class="advantages__img">
+                    <h3 class="advantages__item-title text">Только практические<br>навыки в работе</h3>
+                    <p class="advantages__item-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./icons/icon-2.svg" alt="flash card" class="advantages__img">
+                    <h3 class="advantages__item-title text">Работа на самом<br>современном оборудовании</h3>
+                    <p class="advantages__item-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+                <div class="advantages__item">
+                    <img src="./icons/icon-3.svg" alt="usb" class="advantages__img">
+                    <h3 class="advantages__item-title text">Сертификация<br>по окончании обучения</h3>
+                    <p class="advantages__item-descr text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Netus eget velit quisque accumsan amet tortor. Velit, volutpat egestas fringilla mi porttitor tempus. Placerat dui.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="partners">
+        <div class="container">
+            <div class="partners__header">
+                <img src="./icons/icon-heading.png" alt="partners logo" class="partners__logo">
+                <h2 class="partners__title text">Партнеры - топовые бренды</h2>                
+            </div>
+            <div class="partners__wrapper">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+                <img src="./icons/msi_logo.svg" alt="msi logo" class="partners__wrapper_item-logo">
+            </div>
+        </div>
+    </section>
+
+    <section class="program" id="program">
+        <div class="program__container">
+            <img src="./icons/icon-heading.png" alt="program logo" class="program__logo">
+            <h2 class="program__title text">Программа обучения</h2>
+            <p class="program__subtitle text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+            <div class="program__wrapper">
+                <div class="program__left-content">
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №1</p>
+                        <p class="program__content-descr text right">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №3</p>
+                        <p class="program__content-descr text right">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №5</p>
+                        <p class="program__content-descr text right">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №7</p>
+                        <p class="program__content-descr text right">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                </div>
+                <div class="program__left_divider-wrapper">
+                    <div class="program__left-divider"></div>
+                    <div class="program__left-divider"></div>
+                    <div class="program__left-divider"></div>
+                    <div class="program__left-divider"></div>
+                </div>
+                <div class="program__divider"></div>
+                <div class="program__right_divider-wrapper">
+                    <div class="program__right-divider"></div>
+                    <div class="program__right-divider"></div>
+                    <div class="program__right-divider"></div>
+                </div>
+                <div class="program__right-content">
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №2</p>
+                        <p class="program__content-descr text left">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №4</p>
+                        <p class="program__content-descr text left">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                    <div class="program__content-item">
+                        <p class="program__content-week text">Неделя №6</p>
+                        <p class="program__content-descr text left">Красивая часть курса,<br>которая помогает в успехе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="teachers" id="teachers">
+        <div class="container">
+            <div class="teachers__header">
+                <img src="./icons/icon-heading.png" alt="teachers logo" class="teachers__logo">
+                <h2 class="teachers__title text">Ваши преподаватели</h2>                
+            </div>
+            <div class="teachers__wrapper">
+                <div class="teachers__item">
+                    <img src="./imajes/Dmitriy.png" alt="Дмитрий Иванов" class="teachers__photo">
+                    <h3 class="teachers__name text">Дмитрий Иванов</h3>
+                    <p class="teachers__descr text">Специалист по видеокартам</p>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
+                </div>
+                <div class="teachers__item">
+                    <img src="./imajes/Dmitriy_2.png" alt="Дмитрий Иванов" class="teachers__photo">
+                    <h3 class="teachers__name text">Дмитрий Иванов</h3>
+                    <p class="teachers__descr text">Специалист по видеокартам</p>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
+                </div>
+                <div class="teachers__item">
+                    <img src="./imajes/Dmitriy_3.png" alt="Дмитрий Иванов" class="teachers__photo">
+                    <h3 class="teachers__name text">Дмитрий Иванов</h3>
+                    <p class="teachers__descr text">Специалист по видеокартам</p>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h2 class="footer__title text">Статьи каждую неделю</h2>
+        <p class="footer__descr text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
+        <form action="#" class="footer__mailing-form" id="mailing-form">
+            <input type="email" required placeholder="E-mail" class="footer__mailing">
+            <button data-modal="send" class="footer__btn text">Подписаться</button>
+        </form>
+        <div class="footer__social" id="social">
+            <div class="footer__social-item">
+                <img src="./icons/vk.svg" alt="vk">
+            </div>
+            <div class="footer__social-item">
+                <img src="./icons/youtube.svg" alt="youtube">
+            </div>
+            <div class="footer__social-item">
+                <img src="./icons/facebook.svg" alt="facebook">
+            </div>
+            <div class="footer__social-item">
+                <img src="./icons/instagram.svg" alt="instagram">
+            </div>
+        </div>
+        <p class="footer__template-info text">Templates #18. More on Figma.info</p>
+    </footer>
+
+    <div class="overlay">
+        <div class="modal" id="indev">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Оповещение</div>
+            <div class="modal__descr">Данный функционал находится в разработке</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+        </svg>
+    </a>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
