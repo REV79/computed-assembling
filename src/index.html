@@ -13,14 +13,14 @@
 
 <body>
     <section class="promo">
-        <header class="header">
+        <header id="up" class="header">
             <a href="index.html" class="header__header-logo">
                 <img src="./imajes/logo.svg" alt="logo">
             </a>
             <nav class="header__nav">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#" class="header__nav-link text">Главная</a>
+                        <a href="#up" class="header__nav-link text">Главная</a>
                     </li>
                     <li class="header__nav-item">
                         <a href="#about" class="header__nav-link text">Курсы</a>
@@ -44,7 +44,7 @@
                     <span class="header__hamburger-item header__hamburger-active"></span>
                 </div>
             </nav>
-            <button type="button" href="#" class="header__header-btn text">Зайти в кабинет</button>            
+            <button data-modal="indev" type="button" href="#" class="header__header-btn text">Зайти в кабинет</button>            
         </header>
         <div class="promo__container">
             <div class="promo__wrapper">
@@ -72,7 +72,7 @@
         <div class="promo_footer">
             <div class="promo_footer__container">
                 <div class="promo_footer__min-container">
-                    <button type="button" class="promo_footer__ordering-btn text">Заказать курс</button>
+                    <button data-modal="indev" type="button" class="promo_footer__ordering-btn text">Заказать курс</button>
                     <div class="promo_footer__statistic">
                         <div class="promo_footer__statistic-content">
                             <p class="promo_footer__descr text">Учеников всего:</p>
@@ -260,19 +260,19 @@
                     <img src="./imajes/Dmitriy.png" alt="Дмитрий Иванов" class="teachers__photo">
                     <h3 class="teachers__name text">Дмитрий Иванов</h3>
                     <p class="teachers__descr text">Специалист по видеокартам</p>
-                    <button class="teachers__biography-btn text" type="button">Биография</button>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
                 </div>
                 <div class="teachers__item">
                     <img src="./imajes/Dmitriy_2.png" alt="Дмитрий Иванов" class="teachers__photo">
                     <h3 class="teachers__name text">Дмитрий Иванов</h3>
                     <p class="teachers__descr text">Специалист по видеокартам</p>
-                    <button class="teachers__biography-btn text" type="button">Биография</button>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
                 </div>
                 <div class="teachers__item">
                     <img src="./imajes/Dmitriy_3.png" alt="Дмитрий Иванов" class="teachers__photo">
                     <h3 class="teachers__name text">Дмитрий Иванов</h3>
                     <p class="teachers__descr text">Специалист по видеокартам</p>
-                    <button class="teachers__biography-btn text" type="button">Биография</button>
+                    <button data-modal="indev" class="teachers__biography-btn text" type="button">Биография</button>
                 </div>
             </div>
         </div>
@@ -283,7 +283,7 @@
         <p class="footer__descr text">Больше 90% учеников прошли полный курс и смогли<br> собрать свой первый компьютер</p>
         <form action="#" class="footer__mailing-form" id="mailing-form">
             <input type="email" required placeholder="E-mail" class="footer__mailing">
-            <button class="footer__btn text">Подписаться</button>
+            <button data-modal="send" class="footer__btn text">Подписаться</button>
         </form>
         <div class="footer__social" id="social">
             <div class="footer__social-item">
@@ -301,6 +301,20 @@
         </div>
         <p class="footer__template-info text">Templates #18. More on Figma.info</p>
     </footer>
+
+    <div class="overlay">
+        <div class="modal" id="indev">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Оповещение</div>
+            <div class="modal__descr">Данный функционал находится в разработке</div>
+        </div>
+    </div>
+    <a href="#up" class="pageup">
+        <svg class="up" viewBox="0 0 26 26" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M26 0H0V26H26V0ZM4.6593 17.7519L13.1233 10.33L21.5873 17.7519L22.9059 16.2481L13.7826 8.24813L13.1233 7.67L12.464 8.24813L3.3407 16.2481L4.6593 17.7519Z" fill="black"/>
+        </svg>
+    </a>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
