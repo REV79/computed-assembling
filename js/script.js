@@ -33,7 +33,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     // Timer
-    const deadLine = '2022-12-20';
+    const deadLine = '2023-01-20';
     const getTimeRemaining = (endtime) => {
         const t = Date.parse(endtime) - new Date(),
             days = Math.floor(t / (1000 * 60 * 60 * 24)),
